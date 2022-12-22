@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//connolly hal.com//DTD WWW HTML Date 1994/04/19 17:24:06 //EN">
+<!-- saved from url=(0052)https://www.w3.org/MarkUp/1995-archive/Headings.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Heading elements in HTML</title> </head><body><nextid n="z36">
+
+
+
+<h1><a name="z15">Headings</a></h1>
+<a name="H1.index"></a>
+<a name="H2.index"></a>
+<a name="H3.index"></a>
+<a name="H4.index"></a>
+<a name="H5.index"></a>
+<a name="H6.index"></a>
+
+<p>Six levels of heading are supported. (Note that a hypertext
+node within a hypertext work tends to need fewer levels of heading
+than a work whose only structure is given by the nesting of headings.)
+
+</p><p>A heading element implies all the font changes,
+paragraph breaks before and after, and white space (for example)
+necessary to render the heading. Further character emphasis or
+paragraph marks are not required in HTML.
+
+</p><p>H1 is the highest level of heading, and is recommended for
+the start of a hypertext node. It is suggested that the the text
+of the first heading be suitable for a reader who is already
+browsing in related information, in contrast to the <a href="https://www.w3.org/MarkUp/1995-archive/Elements/TITLE.html" name="z6">title</a> tag which should
+identify the node in a wider context.
+
+</p><p>The heading elements are
+
+</p><pre>		&lt;H1&gt;, &lt;H2&gt;, &lt;H3&gt;, &lt;H4&gt;, &lt;H5&gt;, &lt;H6&gt;
+
+</pre>
+
+<p>It is not normal practice to jump from one header to a header
+level more than one below, for example for follow an H1 with
+an H3. Although this is legal, it is discouraged,
+as it may produce strange results for example when generating
+other representations from the HTML.
+
+</p><h2>Example:</h2>
+
+<pre>		&lt;H1&gt;This is a heading&lt;/H1&gt;
+		Here is some text
+		&lt;H2&gt;Second level heading&lt;/H2&gt;
+		Here is some more text.
+
+</pre>
+
+<h2>Parser Note:</h2>
+
+<p>Parsers should not require any specific order to heading elements,
+even if the heading level increases by more than one between
+successive headings.
+
+</p><h2>Typical Rendering</h2>
+
+<dl>
+
+<dt>H1
+
+</dt><dd>Bold very large font, centered. One or two lines clear space
+between this and anything following. If printed on paper,
+start new page.
+
+</dd><dt>H2
+
+</dt><dd>Bold, large font,, flush left against left margin,
+no indent. One or two clear lines above and below.
+
+</dd><dt>H3
+
+</dt><dd>Italic, large font, slightly indented from the left margin.
+One or two clear lines above and below.
+
+</dd><dt>H4
+
+</dt><dd>Bold, normal font, indented more than H3.
+One clear line above and below.
+
+</dd><dt>H5
+
+</dt><dd>Italic, normal font, indented as H4.
+One clear line above.
+
+</dd><dt>H6
+
+</dt><dd>Bold, indented same as normal text, more than H5.
+One clear line above.
+</dd></dl>
+
+<p>These typical values are just an indication,
+and it is up to the designer of the presentation software to
+define the styles. The reader may have options to customize these.
+When writing documents, you should assume that whatever is done
+it is designed to have the same sort of effect as the styles
+above.
+
+</p><p>The rendering software is responsible for generating suitable
+vertical white space between elements, so it is NOT normal or
+required to follow a heading element with a paragraph mark.
+
+
+</p></nextid></body></html>
